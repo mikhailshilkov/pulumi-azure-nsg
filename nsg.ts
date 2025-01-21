@@ -37,7 +37,7 @@ export interface NetworkSecurityGroupArgs {
     destinationAddressPrefixes?: pulumi.Input<string[]>;
 
     /** The tags to associate with your network security group */
-    // tags?: pulumi.Input<{[key: string]: string}>;    
+    tags?: pulumi.Input<{[key: string]: string}>;
 }
 
 // Security rule.

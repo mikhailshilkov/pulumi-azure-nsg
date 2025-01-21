@@ -471,9 +471,9 @@
     "@pulumi/pulumi" "^3.142.0"
 
 "@pulumi/pulumi@^3.142.0", "@pulumi/pulumi@^3.144.0", "@pulumi/pulumi@^3.145.0":
-  version "3.146.0"
-  resolved "https://registry.yarnpkg.com/@pulumi/pulumi/-/pulumi-3.146.0.tgz#4845bf0e23f99f9e6dfc455950a816302a0dfe89"
-  integrity sha512-DVj7nhjg+R9E4t7XLAFnRiDziVTQRDpBDonXDsNeaSE0KZQmOsP1n+PSFY/Wkcgh3Gblww/EtVfGNMNHqMD1Zg==
+  version "3.147.0"
+  resolved "https://registry.yarnpkg.com/@pulumi/pulumi/-/pulumi-3.147.0.tgz#b118b353fadfe9ee0705d81d38f772caa9bd1b2b"
+  integrity sha512-5tBGauFC6rAiB5I8Ug6kHBNB1YNmLANT1yy2pXwyMMWXmFc1++sYrZ2QDyVf0cJVtXdFhqw1kw/CxdV4YCHi0Q==
   dependencies:
     "@grpc/grpc-js" "^1.10.1"
     "@logdna/tail-file" "^2.0.6"
@@ -2019,9 +2019,15 @@ protobufjs@^7.2.5:
     "@types/node" ">=13.7.0"
     long "^5.0.0"
 
-"pulumi-ts-provider@https://gitpkg.vercel.app/mikhailshilkov/comp-as-comp/ts/pulumi-ts-provider?main":
+"pulumi-ts-provider@https://gitpkg.vercel.app/mikhailshilkov/comp-as-comp/ts/pulumi-ts-provider?20621b672151ec13b7c384d570e713f765cc83ca":
   version "0.1.0"
-  resolved "https://gitpkg.vercel.app/mikhailshilkov/comp-as-comp/ts/pulumi-ts-provider?main#bae5c8c9ec92ce4189d80296a0ef2e5a74198b17"
+  resolved "https://gitpkg.vercel.app/mikhailshilkov/comp-as-comp/ts/pulumi-ts-provider?20621b672151ec13b7c384d570e713f765cc83ca#8d868175546e2882e53c063c9585035fbe38c393"
+  dependencies:
+    "@pulumi/pulumi" "^3.145.0"
+
+"pulumi-ts-provider@https://gitpkg.vercel.app/mikhailshilkov/comp-as-comp/ts/pulumi-ts-provider?3ac74aa9411e3ba9d008dfdef4e7afcee008f794":
+  version "0.1.0"
+  resolved "https://gitpkg.vercel.app/mikhailshilkov/comp-as-comp/ts/pulumi-ts-provider?3ac74aa9411e3ba9d008dfdef4e7afcee008f794#17cc49bdd152a35604bce6533aad59f972a66b42"
   dependencies:
     "@pulumi/pulumi" "^3.145.0"
 
