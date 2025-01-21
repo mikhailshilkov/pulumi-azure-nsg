@@ -1,0 +1,19 @@
+{
+    "name": "azure-nsg",
+    "description": "Azure Network Security Group",
+    "version": "0.0.1",
+    "dependencies": {
+        "@pulumi/azure-native": "^2.83.0",
+        "@pulumi/pulumi": "^3.144.0",
+        "pulumi-ts-provider": "https://gitpkg.vercel.app/mikhailshilkov/comp-as-comp/ts/pulumi-ts-provider?main"
+    },
+    "devDependencies": {
+        "@types/node": "^10.0.0",
+        "pkg": "^5.6.0",
+        "typescript": "^4.0.0"
+    },
+    "scripts": {
+        "gen": "ts-node index.ts --gen",
+        "start": "ts-node index.ts"
+    }
+}

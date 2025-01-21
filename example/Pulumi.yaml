@@ -1,0 +1,44 @@
+name: nsg-component-yaml
+runtime: yaml
+plugins:
+  providers:
+    - name: azure-nsg
+      path: ..
+resources:
+  rg:
+    type: azure-native:resources:ResourceGroup
+    properties:
+      location: WestEurope
+  example:
+    type: azure-nsg:NetworkSecurityGroup
+    properties:
+      resourceGroupName: ${rg.name}
+      location: ${rg.location}
+      predefinedRules:
+        - name: HTTP
+          priority: 100
+        - name: HTTPS
+          priority: 110
+        - name: SSH
+          priority: 120
+      customRules:
+        - name: allow-internal
+          priority: 200
+          direction: Inbound
+          access: Allow
+          protocol: "*"
+          sourceAddressPrefix: 10.0.0.0/16
+          destinationPortRange: "*"
+          description: Allow all internal network traffic
+        - name: allow-monitoring
+          priority: 210
+          direction: Inbound
+          access: Allow
+          protocol: Tcp
+          sourceAddressPrefix: AzureMonitor
+          destinationPortRange: "443"
+          description: Allow Azure Monitor traffic
+      sourceAddressPrefix: 
+        - "*"
+      destinationAddressPrefix:
+        - "*"
